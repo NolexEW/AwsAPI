@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  db:
+    image: mysql:5.7
+    environment:
+      MYSQL_DATABASE: employees
+      MYSQL_USER: root
+      MYSQL_PASSWORD: example
+      MYSQL_ROOT_PASSWORD: example
+    ports:
+      - "3306:3306"
+    restart: always
+
+  
+
+
